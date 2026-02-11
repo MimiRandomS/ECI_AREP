@@ -12,7 +12,22 @@ Este repositorio agrupa múltiples servicios backend, microservicios, aplicacion
 ```
 ECI_AREP/
 │
+├── Parciales/
+│   ├── Primer Parcial/
+│   │   ├── assets/
+│   │   ├── backend/
+│   │   └── facade/
+│   │
+│   ├── Segundo Parcial/
+│   │   ├── math-service/
+│   │   ├── proxy-service/
+│   │   └── other/
+│   │
+│   └── Tercer Parcial/
+│
 ├── Talleres/
+│   ├── enunciados/
+│   ├── IA/
 │   ├── taller1/
 │   ├── taller2/
 │   ├── taller3/
@@ -22,13 +37,10 @@ ECI_AREP/
 │   ├── tallerLLM/
 │   └── tareaLLM/
 │
-├── Parciales/
-│   ├── Primer Parcial/
-│   │   ├── backend/
-│   │   └── facade/
-│   └── Segundo Parcial/
-│       ├── math-service/
-│       └── proxy-service/
+├── Quices/
+│
+└── Presentaciones/
+
 ```
 
 ---
