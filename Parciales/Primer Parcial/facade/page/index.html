@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Parcial AREP</title>
+</head>
+
+<body>
+    <h1>Endpoints</h1>
+    <h2>SET</h2>
+    <label for="set">Escriba la llave:</label><br />
+    <input type="text" id="set_key1" placeholder="Ej: aguacate" /><br /><br />
+    <label for="set">Escriba el valor:</label><br />
+    <input type="text" id="set_value1" placeholder="Ej: nueces" /><br /><br />
+    <button id="sendBtn1">Enviar</button>
+    <h2>Respuesta:</h2>
+    <pre id="responseBoxSet" style="max-width: 800px;"></pre>
+
+    <h2>GET</h2>
+    <label for="set">Escriba la llave:</label><br />
+    <input type="text" id="set_key2" placeholder="Ej: aguacate" /><br /><br />
+    <button id="sendBtn2">Enviar</button>
+    <h2>Respuesta:</h2>
+    <pre id="responseBoxGet" style="max-width: 800px;"></pre>
+
+    <script>
+        function sendCommandSet() {
+            let key = document.getElementById("set_key1").value;
+            let value = document.getElementById("set_value1").value;
+
+            let url = "/setkv?key=" + encodeURIComponent(key) + "&value=" + encodeURIComponent(value);
+
+            fetch(url)
+                .then((res) => res.json())
+                .then((data) => {
+                    document.getElementById("responseBoxSet").textContent = JSON.stringify(
+                        data,
+                        null,
+                        2
+                    );
+                })
+                .catch((err) => {
+                    console.error("Error en fetch:", err);
+                    document.getElementById("responseBoxSet").textContent =
+                        "Error en fetch: " + err;
+                });
+        }
+
+        function sendCommandGet() {
+            let key = document.getElementById("set_key2").value;
+            let url = "/getkv?key=" + encodeURIComponent(key);
+            fetch(url)
+                .then((res) => res.json())
+                .then((data) => {
+                    document.getElementById("responseBoxGet").textContent = JSON.stringify(
+                        data,
+                        null,
+                        2
+                    );
+                })
+                .catch((err) => {
+                    console.error("Error en fetch:", err);
+                    document.getElementById("responseBoxGet").textContent =
+                        "Error en fetch: " + err;
+                });
+        }
+
+        document.getElementById("sendBtn1").addEventListener("click", sendCommandSet);
+        document.getElementById("sendBtn2").addEventListener("click", sendCommandGet);
+    </script>
+
+</body>
+
+</html>

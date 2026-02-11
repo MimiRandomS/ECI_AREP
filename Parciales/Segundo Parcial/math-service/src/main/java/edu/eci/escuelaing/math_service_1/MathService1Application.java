@@ -1,0 +1,13 @@
+package edu.eci.escuelaing.math_service_1;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MathService1Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(MathService1Application.class, args);
+	}
+
+}

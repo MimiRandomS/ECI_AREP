@@ -1,0 +1,4 @@
+¿Qué es la Inteligencia Artificial (IA)?
+La Inteligencia Artificial (IA) es una rama de la ciencia de la computación dedicada a crear máquinas y sistemas que pueden realizar tareas que normalmente requieren de la inteligencia humana. Estas tareas incluyen el aprendizaje, el razonamiento, la percepción, la comprensión del lenguaje natural, el reconocimiento de patrones, la resolución de problemas y la toma de decisiones.
+
+En esencia, la IA no se trata de replicar la conciencia humana, sino de simular sus procesos cognitivos de manera eficiente. Para lograr esto, se basa en algoritmos, modelos matemáticos y grandes conjuntos de datos. El objetivo final es desarrollar agentes inteligentes: sistemas que puedan percibir su entorno, procesar esa información y tomar acciones para maximizar sus posibilidades de éxito en un objetivo específico.

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-main">
+        <div class="header">
+            <h1 class="title">Bienvenido</h1>
+            <img class="main-image" src="img.jpg" alt="Imagen principal">
+        </div>
+
+        <div class="forms-container">
+
+            <!-- Formulario Crear / Editar -->
+            <div class="form-section post-section">
+                <h3 class="subtitle">Agregar / Editar Propiedad</h3>
+                <form id="property-form" class="form">
+                    <input type="hidden" id="property-id">
+                    <label class="form-label" for="address">Dirección:</label>
+                    <input class="form-input" type="text" id="address" required>
+                    
+                    <label class="form-label" for="price">Precio:</label>
+                    <input class="form-input" type="number" id="price" required>
+                    
+                    <label class="form-label" for="size">Tamaño (m²):</label>
+                    <input class="form-input" type="number" id="size" required>
+                    
+                    <label class="form-label" for="description">Descripción:</label>
+                    <textarea class="form-input" id="description"></textarea>
+                    
+                    <button class="form-button" type="submit">Guardar</button>
+                </form>
+            </div>
+
+            <div class="form-section get-section">
+                <h3 class="subtitle">Propiedades</h3>
+                <table id="properties-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Dirección</th>
+                            <th>Precio</th>
+                            <th>Tamaño</th>
+                            <th>Descripción</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

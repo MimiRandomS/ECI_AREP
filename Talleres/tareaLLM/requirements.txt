@@ -1,0 +1,11 @@
+langchain
+langchain-community
+openai
+python-dotenv
+tiktoken
+langchain_openai
+pinecone
+langchain-text-splitters
+langchain-huggingface 
+sentence-transformers
+pinecone-client
